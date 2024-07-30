@@ -2,76 +2,98 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+}
+*h1{
+    text-align: center;
 }
 
 header {
-    background: #333;
+    background-color: #333;
     color: #fff;
-    padding: 1rem 0;
+    padding: 1em;
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
-}
-
-header p {
-    font-style: italic;
-}
-
-section {
-    padding: 2rem 1rem;
-    margin: 1rem 0;
-}
-
-section#about img {
-    max-width: 150px;
-    border-radius: 50%;
-}
-
-h2 {
-    text-align: center;
-    color: #333;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
-ul li {
-    display: inline-block;
-    margin: 0 1rem;
-}
-
-.project {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    margin: 1rem 0;
-    text-align: center;
-}
-
-.project img {
-    max-width: 100%;
-    height: auto;
+nav a {
+    color: #fff;
+    margin: 0 1em;
+    text-decoration: none;
 }
 
 footer {
-    background: #333;
+    background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 1rem 0;
-    position: absolute;
-    bottom: 0;
+    padding: 1em;
+}
+
+.banner {
+    background: url('images/banner.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 4em 0;
+    text-align: center;
+    color: #fff;
+}
+
+.banner .btn {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 1em 2em;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cars {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+}
+
+.car {
+    text-align: center;
+    max-width: 200px;
+}
+
+.car img {
     width: 100%;
+    border-radius: 5px;
 }
 
-a {
-    color: #333;
+.about {
+    padding: 2em;
+    background: #f4f4f4;
+    text-align: center;
 }
 
-a:hover {
-    color: #007BFF;
+form {
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 1em;
+    background: #f9f9f9;
+    border-radius: 5px;
 }
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin:
